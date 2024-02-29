@@ -208,6 +208,11 @@ main section.s2 div.block{
     margin: 50px 0;
 }
 
+main section.s2 div.block div.niveau{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid beige; */
+}
 main section.s2 div div.ligne{
 border: 5px solid black;
 opacity: 0.5;
@@ -217,4 +222,54 @@ background-color: #000;
 main section.s2 div div.ligne div.lignewhite{
     border: 5px solid white;
     width: 10%;
+}
+
+
+
+@media screen and (max-width:800px) {
+    body{
+        /* background-color: black; */
+    }
+
+
+
+    header{
+        height: 15vh;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+
+
+
+
+
+    /* main */
+    main section.s1 div.texte{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    main section.s1 div.texte h1{
+        font-size: 2em;
+    }
+
+    main section.s1 div.image{
+        display: none;
+    }
+
+
+    main section.s1 div.texte p a{
+        background-color: #fff;
+        color: var(--colorPrincipale);
+    }
+
+    main section.s1 div.texte p a img{
+        display: none ;
+    }
+    
+    main section.s1 div.texte p a:hover{
+        background-color: var(--colorPrincipale);
+        color: var(--colorwhite);
+    }
 }
