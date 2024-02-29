@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    /* color: rgba(0, 0, 0,0.5); */
+}
+
+
+:root{
+    --taitleparagraphe: 1em;
+    --tailleh1:3.5em;
+    --colorPrincipale:#6f2525;
+    --colorwhite:white;
+    --colorp:rgba(0, 0, 0,0.5);
+    --colorpw:rgba(255, 255, 255,0.5);
+
+
+}
+
+
+/* partie header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--colorPrincipale);
+    height: 10vh;
+}
+
+header div.logo h1{
+  color: var(--colorwhite);
+  /* border: 1px solid white; */
+  line-height: 70px;
+}
+
+header nav{
+    /* border: 1px solid white; */
+    width: 40%;
+    
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    height: 10vh;
+}
+
+
+header nav ul li{
+    list-style: none;
+}
+
+
+
+header nav ul li a {
+   
+    color: var(--colorwhite);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* parte principale */
+
+
+
+main section.s1{
+    display: flex;
+    height: 90vh;
+    border: 1px solid black;
+}
+
+main section.s1 div.image{
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+main section.s1 div.texte{
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 50%;
+
+}
+
+
+main section.s1 div.texte h1{
+    font-size: var(--tailleh1);
+    margin-top: 100px;
+}
+
+
+main section.s1 div.texte p{
+    margin: 60px 0;
+
+    color: var(--colorp);
+}
+
+
+main section.s1 div.texte p a{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--colorPrincipale);
+    width:  25% ;
+    border: 1px solid black;
+    margin: 0 auto;
+    height: 6vh;
+    border-radius: 10px;
+    color: var(--colorwhite);
+    font-weight: bold;
+    font-size: 1.2em;
+        
+}
+
+main section.s1 div.texte p a img{
+    color: var(--colorwhite);
+    width: 15%;
+}
+
+
+main section.s1 div.texte p a  span{
+    /* border:  1px solid white; */
+    line-height: 35px;
+
+    
+}
+
+
+
+
+
+
+/* s2 */
+
+
+
+
+
+
+main section.s2{
+    background-color: var(--colorPrincipale);
+    color: var(--colorwhite);
+    text-align: center;
+    padding: 10px 20px ;
+}
+
+
+main section.s2 div h1{
+    font-size: var(--tailleh1);
+    margin: 50px 0;
+    /* border: 1px solid white; */
+}
+
+main section.s2 div p{
+    color: var(--colorpw);
+    margin: 50px 0;
+}
+
+
+main section.s2 div table{
+
+    width: 100%;
+
+
+}
+
+main section.s2 div.table{
+    position: relative;
+}
+
+
+main section.s2 div.table tr td{
+    padding: 20px 0;
+    color: var(--colorpw);
+}
+
+main section.s2 div.table tr td.selection{
+    color: white;
+    position: absolute;
+    bottom: -1;
+    border-bottom: 5px solid white;
+    width: 10%;
+}
+
+main section.s2 div.table{
+    border-bottom: 5px solid var(--colorpw);
+
+}  
+
+
+main section.s2 div.block{
+    margin: 50px 0;
+}
+
+main section.s2 div div.ligne{
+border: 5px solid black;
+opacity: 0.5;
+background-color: #000;
+}
+
+main section.s2 div div.ligne div.lignewhite{
+    border: 5px solid white;
+    width: 10%;
+}
